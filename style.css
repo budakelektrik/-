@@ -414,5 +414,5 @@ textarea {
 }
 
 #email {
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
