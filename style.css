@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(24 26 27);
+    background-color: #131516;
     color: rgb(152 179 221);
     font-family: monospace;
     text-align: center;
@@ -64,16 +65,6 @@ body {
     display: none;
 }
 
-.first-h1 {
-    display: block;
-    background-color: rgb(25, 25, 180);
-    width: auto;
-    margin: 0;
-    text-align: center;
-    padding: 30px;
-    font-size: 3.2rem;
-}
-
 .video-inline-text h2 {
     color: whitesmoke;
     font-size: 2.3rem;
@@ -106,13 +97,9 @@ video {
     }
 
     .first-h1 {
-        display: block;
-        background-color: rgb(25, 25, 180);
-        width: auto;
-        margin: 0;
-        text-align: center;
-        padding: 30px;
-        font-size: 3.2rem;
+        background-color: #131516;
+        margin: 0 auto;
+        width: 90%;
     }
 
     .big-video {
@@ -133,6 +120,8 @@ video {
         font-size: 24px;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: 17rem;
+        width: 600px;
     }
 
     .contact-container {
@@ -163,8 +152,6 @@ video {
         text-align: center;
         align-items: center;
     }
-
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -254,13 +241,8 @@ video {
 
 @media screen and (max-width: 916px) {
     .second-h1 {
-        display: block;
-        background-color: rgb(25, 25, 180);
-        width: auto;
-        margin: 0;
-        text-align: center;
-        padding: 30px;
-        font-size: 3rem;
+        display: inline;
+        width: 100%;
     }
 
     .first-h1 {
@@ -285,17 +267,29 @@ video {
         font-size: 24px;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        width: 300px;
     }
 
     .video-inline-text h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
+        font-size: 1.1rem;
+        margin-bottom: 450px;
+        margin-left: 20px;
+    }
+
+    .video-inline-text a {
+        margin-top: -20px;
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        font-size: 1rem;
+        vertical-align: middle;
+        padding-bottom: 8px;
     }
 }
 
 a {
     background-color: red;
-    padding: 10px;
+    padding: 5px 15px;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -309,6 +303,10 @@ a {
 
 a:hover {
     background-color: rgb(189, 15, 15);
+}
+
+a:active {
+    background-color: rgb(134, 6, 6);
 }
 
 .sertificates {
@@ -415,4 +413,18 @@ textarea {
 
 #email {
     text-transform: lowercase;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #333;
 }
